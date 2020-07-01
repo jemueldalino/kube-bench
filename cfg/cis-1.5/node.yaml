@@ -131,7 +131,7 @@ groups:
                 op: bitmask
                 value: "644"
         remediation: |
-          Run the following command (using the config file location identified in the Audit step)
+          Run the following command (using the config file location identied in the Audit step)
           chmod 644 $kubeletconf
         scored: true
 
@@ -143,7 +143,7 @@ groups:
             - flag: root:root
               set: true
         remediation: |
-          Run the following command (using the config file location identified in the Audit step)
+          Run the following command (using the config file location identied in the Audit step)
           chown root:root $kubeletconf
         scored: true
 
@@ -293,7 +293,7 @@ groups:
         scored: true
 
       - id: 4.2.7
-        text: "Ensure that the --make-iptables-util-chains argument is set to true (Scored)"
+        text: "Ensure that the --make-iptables-util-chains argument is set to true (Scored) "
         audit: "/bin/ps -fC $kubeletbin"
         audit_config: "/bin/cat $kubeletconf"
         tests:
